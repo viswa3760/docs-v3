@@ -1,0 +1,205 @@
+site_name: Dojima Docs
+site_author: Dojima Network
+copyright: Copyright &copy; 2024 Dojima Network
+repo_name: Dojima Docs
+repo_url: https://github.com/dojimanetwork/dojima-blockscout
+edit_uri: edit/main/docs/
+site_url: https://docs.polygon.technology/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: white
+      accent: purple
+  language: en
+  custom_dir: overrides
+  favicon: img/dojimaicon.svg
+  logo: img/logo.png
+  
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    # - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.expansion
+    - navigation.integration
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - content.code.copy
+    - content.action.edit
+
+nav:
+  - Home: index.md
+  - Hermes:
+      - About Us: hermes/about-us.md
+      - Architecture:
+          - Overview: hermes/architecture/overview.md
+          - Dojima Chain: hermes/architecture/dojimachain.md
+          - Hermes Chain: hermes/architecture/hermeschain.md
+      - Chain Clients:
+          - Evm:
+              - Hermes Bridge: hermes/chain-clients/evm/hermes-bridge.md
+              - Ethereum State Sender Contract: hermes/chain-clients/evm/state-sender-contract.md
+          - Non Evm:
+              - Arweave: hermes/chain-clients/nonevm/arweave.md
+              - Polkadot: hermes/chain-clients/nonevm/polkadot.md
+              - Solana: hermes/chain-clients/nonevm/solana.md
+      - Concepts:
+          - Code Liberies: hermes/concepts/code.liberies.md
+          - Connecting Doj Chain: hermes/concepts/connecting.doj.chain.md
+          - Querying: hermes/concepts/querying.md
+      - D11K Guide:
+          - Arweave: hermes/d11kguide/arweave.md
+          - Binance Becon: hermes/d11kguide/binance-becon.md
+          - Bitcoin: hermes/d11kguide/bitcoin.md
+          - Client: hermes/d11kguide/client.md
+          - Cosmos: hermes/d11kguide/cosmos.md
+          - Crypto: hermes/d11kguide/crypto.md
+          - Ethereum: hermes/d11kguide/ethereum.md
+          - Hermes: hermes/d11kguide/hermes.md
+          - Polkadot: hermes/d11kguide/polkadot.md
+          - Solana: hermes/d11kguide/solana.md
+          - Utils: hermes/d11kguide/utils.md
+      - Hermes Deployment :
+          - Cluster Launcher :
+              - Overview : hermes/hermesdeployment/cluster-launcher/overview.md
+              - Setup AWS : hermes/hermesdeployment/cluster-launcher/setup-aws.md
+              - System Requirements: hermes/hermesdeployment/cluster-launcher/system-requirements.md
+          - Deploying : hermes/hermesdeployment/deploying.md  
+      - Resources :
+        - Endpoints: hermes/Resources/endpoints.md 
+        - Faucet: hermes/Resources/faucet.md 
+        - Transaction: hermes/Resources/transaction.md  
+  - Dojima :
+    - Overview: Dojima/index.md  
+    - Faucet : Dojima/faucet.md 
+    - Network : 
+       Network EndPoints: Dojima/Network/endpoints.md
+    - Resources :
+        Basics of Web3 Development: Dojima/Resources/endpoints.md
+        External Documentation: Dojima/Resources/external.md
+    - Wallet:
+      - Get Started: Dojima/Wallet/getstarted.md
+      - Metamask : 
+        - Add Dojima Network : Dojima/Wallet/MetaMask/config-dojima-on-metamask.md
+        - Config Custom Tokens : Dojima/Wallet/MetaMask/custom-tokens.md
+        - Create & Import Accounts : Dojima/Wallet/MetaMask/multiple-accounts.md
+        - Overview of MetaMask : Dojima/Wallet/MetaMask/overview.md
+        - Hello Metamask : Dojima/Wallet/MetaMask/tutorial-metamask.md  
+    - Transaction : Dojima/transactions.md
+    - Verifying A Smart Contract : Dojima/verifying-smart-contract.md
+  - Wallet : 
+    - Create Account : wallet/index.md 
+    - Wallet Login: wallet/wallet-login.md
+    - Wallet Swap: wallet/wallet-swap.md
+  - Dojiam Fass: 
+      Dojima Fass: dojima-faas/index.md
+      Account: dojima-faas/faasaccount.md
+      Price Stats: dojima-faas/faaspricestats.md
+      User: dojima-faas/faasuser.md
+      Transaction Details: dojima-faas/faaspricestats.md
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-9KXJM6C9YP
+  #  feedback:  # feedback form only works when Google Analytics is set up and working
+  #    title: Was this page helpful?
+  #    ratings:
+  #      - icon: fontawesome/regular/face-grin-stars
+  #        name: This page was helpful
+  #        data: 1
+  #        note: >-
+  #          Thanks for your feedback!
+  #      - icon: fontawesome/regular/face-grimace
+  #        name: This page could be improved
+  #        data: 0
+  #        note: >-
+  #          Thanks for your feedback! Help us improve this page by
+  #          using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  social:
+    - icon: fontawesome/solid/circle-question
+      link: https://www.dojima.network
+    - icon: fontawesome/solid/globe
+      link: https://www.dojima.network
+    - icon: fontawesome/brands/github
+      link: https://github.com/dojimanetwork/dojima-blockscout
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+extra_css:
+  - _site_essentials/stylesheets/polygon-docs.webflow.css
+  - _site_essentials/stylesheets/extra.css
+  - https://fonts.googleapis.com/icon?family=Material+Icons
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      permalink_title: Link to this section
+      toc_depth: 4
+  - codehilite
+  - markdown_include.include:
+      base_path: docs
+  - admonition
+  - footnotes
+  - def_list
+  - attr_list
+  - abbr
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.keys
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.caret
+  - meta
+  - smarty
+  - pymdownx.extra
+
+plugins:
+  - search
+  - open-in-new-tab
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      strict: false
+      exclude:
+        - index.md
+
+validation:
+  absolute_links: ignore
+
+extra_javascript:
+  - _site_essentials/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
